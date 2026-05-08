@@ -26,6 +26,7 @@ function showMode(mode) {
 }
 
 showMode("chords")
+buttons[0].classList.add("active")
 
 for (let btn of buttons) {
 
@@ -34,5 +35,11 @@ for (let btn of buttons) {
         let mode = this.dataset.mode
 
         showMode(mode)
+
+        for (let b of buttons) {
+            b.classList.remove("active")
+        }
+
+        this.classList.add("active")
     })
 }
