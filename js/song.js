@@ -17,7 +17,7 @@ artist.innerText = song.artist
 function showMode(mode) {
 
     if (mode === "chords") {
-        content.innerText = song.chords
+        content.innerHTML = formatChords(song.chords)
     }
 
     if (mode === "tabs") {
@@ -42,4 +42,31 @@ for (let btn of buttons) {
 
         this.classList.add("active")
     })
+}
+
+function formatChords(text) {
+
+    let words = text.split(" ")
+
+    let result = ""
+
+    let chords = [
+        "Am", "C", "G", "G6", "F",
+        "Em", "Em9", "Dm", "D", "A",
+        "A#", "E", "Baug", 
+    ]
+
+    for (let word of words) {
+
+        if (chords.includes(word)) {
+
+            result += `<span class="chord">${word}</span> `
+        }
+
+        else {
+            result += word + " "
+        }
+    }
+
+    return result
 }
