@@ -87,8 +87,15 @@ body {
 
 .song-content {
     background: #f4f4f4;
-    padding: 10px;
+    padding: 20px;
     min-height: 150px;
+    border-radius: 10px;
+
+    white-space: pre-wrap;
+
+    font-family: monospace;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
 .mode-btn.active {
