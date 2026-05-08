@@ -1,18 +1,37 @@
 // songs block
 
 let songsList = document.querySelector(".songs-list")
+let buttons = document.querySelectorAll(".filter-btn")
 
-for (let song of songs) {
+function showSongs(type) {
 
-    songsList.innerHTML += `
-        <div class="song-card">
+    songsList.innerHTML = ""
 
-            <h3>${song.name}</h3>
+    for (let song of songs) {
 
-            <p>${song.artist}</p>
+        if (type === "all" || song.type === type) {
 
-            <span>${song.type}</span>
+            songsList.innerHTML += `
+                <div class="song-card">
 
-        </div>
-    `
+                    <h3>${song.name}</h3>
+                    <p>${song.artist}</p>
+                    <span>${song.type}</span>
+
+                </div>
+            `
+        }
+    }
+}
+
+showSongs("all")
+
+for (let btn of buttons) {
+
+    btn.addEventListener("click", function () {
+
+        let type = this.dataset.type
+
+        showSongs(type)
+    })
 }
