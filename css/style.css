@@ -50,3 +50,19 @@ body {
 .song-card h3 {
     margin-top: 0;
 }
+
+.filter {
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.filter-btn:hover {
+    background-color: #bbb;
+}
