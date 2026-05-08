@@ -66,3 +66,27 @@ body {
 .filter-btn:hover {
     background-color: #bbb;
 }
+
+.song-page {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.song-buttons {
+    margin: 10px 0;
+}
+
+.mode-btn {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.song-content {
+    background: #f4f4f4;
+    padding: 10px;
+    min-height: 150px;
+}
