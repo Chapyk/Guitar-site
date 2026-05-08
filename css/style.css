@@ -111,3 +111,11 @@ body {
     border-radius: 10px;
     box-sizing: border-box;
 }
+
+.song-card {
+    transition: 0.2s;
+}
+
+.song-card:hover {
+    transform: scale(1.02);
+}
