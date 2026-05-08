@@ -5,7 +5,15 @@ let buttons = document.querySelectorAll(".filter-btn")
 
 function showSongs(type) {
 
-    songsList.innerHTML = ""
+   songsList.innerHTML += `
+    <div class="song-card" onclick="openSong(${song.id})">
+
+        <h3>${song.name}</h3>
+        <p>${song.artist}</p>
+        <span>${song.type}</span>
+
+    </div>
+`
 
     for (let song of songs) {
 
@@ -34,4 +42,8 @@ for (let btn of buttons) {
 
         showSongs(type)
     })
+}
+
+function openSong(id) {
+    window.location.href = "song.html?id=" + id
 }
