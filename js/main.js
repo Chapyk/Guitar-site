@@ -5,22 +5,14 @@ let buttons = document.querySelectorAll(".filter-btn")
 
 function showSongs(type) {
 
-   songsList.innerHTML += `
-    <div class="song-card" onclick="openSong(${song.id})">
-
-        <h3>${song.name}</h3>
-        <p>${song.artist}</p>
-        <span>${song.type}</span>
-
-    </div>
-`
+    songsList.innerHTML = ""
 
     for (let song of songs) {
 
         if (type === "all" || song.type === type) {
 
             songsList.innerHTML += `
-                <div class="song-card">
+                <div class="song-card" onclick="openSong(${song.id})">
 
                     <h3>${song.name}</h3>
                     <p>${song.artist}</p>
