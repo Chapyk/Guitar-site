@@ -51,3 +51,10 @@ searchInput.addEventListener("input", function () {
 
     showSongs("all")
 })
+
+let themeBtn = document.querySelector(".theme-btn")
+
+themeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark")
+})
