@@ -90,3 +90,8 @@ body {
     padding: 10px;
     min-height: 150px;
 }
+
+.mode-btn.active {
+    background: black;
+    color: white;
+}
