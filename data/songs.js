@@ -3,22 +3,22 @@
 let songs = [
     {
         id: 1,
-        name: "Numb",
-        artist: "Linkin Park",
+        name: "Nintendo 64",
+        artist: "Alex G",
         type: "chords"
     },
 
     {
         id: 2,
-        name: "Boulevard of Broken Dreams",
-        artist: "Green Day",
-        type: "tabs"
+        name: "Things to do",
+        artist: "Alex G",
+        type: "chords"
     },
 
-    {
+      {
         id: 3,
-        name: "Smells Like Teen Spirit",
-        artist: "Nirvana",
-        type: "chords"
-    }
+        name: "Так гріє",
+        artist: "Валентин Стрикало",
+        type: "chords",
+    },
 ]
