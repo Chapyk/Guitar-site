@@ -2,14 +2,21 @@
 
 let songsList = document.querySelector(".songs-list")
 let buttons = document.querySelectorAll(".filter-btn")
+let searchInput = document.querySelector(".search-input")
 
 function showSongs(type) {
 
     songsList.innerHTML = ""
 
+    let text = searchInput.value.toLowerCase()
+
     for (let song of songs) {
 
-        if (type === "all" || song.type === type) {
+        let matchName = song.name.toLowerCase().includes(text)
+
+        let matchType = type === "all" || song.type === type
+
+        if (matchName && matchType) {
 
             songsList.innerHTML += `
                 <div class="song-card" onclick="openSong(${song.id})">
@@ -39,3 +46,8 @@ for (let btn of buttons) {
 function openSong(id) {
     window.location.href = "song.html?id=" + id
 }
+
+searchInput.addEventListener("input", function () {
+
+    showSongs("all")
+})
