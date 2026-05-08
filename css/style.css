@@ -17,3 +17,21 @@ body {
 .main {
     padding: 20px;
 }
+
+.welcome {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.welcome h2 {
+    margin-top: 0;
+}
+
+.songs-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
