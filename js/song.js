@@ -4,13 +4,35 @@ let params = new URLSearchParams(window.location.search)
 
 let id = params.get("id")
 
-let songBlock = document.querySelector(".song-page")
+let song = songs.find(s => s.id == id)
 
-let song = songs.find(item => item.id == id)
+let title = document.querySelector(".song-title")
+let artist = document.querySelector(".song-artist")
+let content = document.querySelector(".song-content")
+let buttons = document.querySelectorAll(".mode-btn")
 
-songBlock.innerHTML = `
-    <h2>${song.name}</h2>
-    <p>${song.artist}</p>
+title.innerText = song.name
+artist.innerText = song.artist
 
-    <pre>${song.type}</pre>
-`
+function showMode(mode) {
+
+    if (mode === "chords") {
+        content.innerText = song.chords
+    }
+
+    if (mode === "tabs") {
+        content.innerText = song.tabs
+    }
+}
+
+showMode("chords")
+
+for (let btn of buttons) {
+
+    btn.addEventListener("click", function () {
+
+        let mode = this.dataset.mode
+
+        showMode(mode)
+    })
+}
