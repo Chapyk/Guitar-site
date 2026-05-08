@@ -3,7 +3,7 @@ let songs = [
         id: 1,
         name: "Nintendo 64",
         artist: "Alex G",
-        type: "chords",
+        type: "chords, tabs",
 
         chords: "Em C G D\nEm C G D",
 
@@ -14,7 +14,7 @@ let songs = [
         id: 2,
         name: "Things to do",
         artist: "Alex G",
-        type: "tabs",
+        type: "chords, tabs",
 
         chords: "Am F C G",
 
@@ -25,7 +25,7 @@ let songs = [
         id: 3,
         name: "Так гріє",
         artist: "Валентин Стрикало",
-        type: "chords",
+        type: "chords, tabs",
 
         chords: "Am C G F",
 
