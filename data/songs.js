@@ -12,7 +12,7 @@ let songs = [
         id: 2,
         name: "Things to do",
         artist: "Alex G",
-        type: "chords"
+        type: "tabs",
     },
 
       {
