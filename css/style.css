@@ -95,3 +95,12 @@ body {
     background: black;
     color: white;
 }
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
