@@ -35,3 +35,18 @@ body {
     color: white;
     cursor: pointer;
 }
+
+.songs {
+    margin-top: 20px;
+}
+
+.song-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.song-card h3 {
+    margin-top: 0;
+}
