@@ -152,3 +152,8 @@ body.dark .search-input {
     background-color: #2d2d2d;
     color: white;
 }
+
+.chord {
+    color: #00b894;
+    font-weight: bold;
+}
