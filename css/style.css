@@ -226,3 +226,7 @@ button:hover {
 .back-btn:hover {
     background-color: #666;
 }
+
+.back-btn:hover {
+    transform: translateX(-3px);
+}
