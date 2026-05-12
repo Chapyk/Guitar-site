@@ -64,7 +64,8 @@ body {
     border: none;
     margin-right: 5px;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #444;
+color: white;
 }
 
 .filter-btn:hover {
@@ -160,6 +161,11 @@ body.light .song-content {
 body.light .search-input {
     background-color: white;
     color: #2d2d2d;
+}
+
+body.light .filter-btn {
+    background-color: #ddd;
+    color: black;
 }
 
 .chord {
