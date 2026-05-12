@@ -3,7 +3,7 @@ let songs = [
         id: 1,
         name: "Nintendo 64",
         artist: "Alex G",
-        type: "chords, tabs",
+        type: "All",
 
         chords: `C Em9 G6
 
@@ -24,7 +24,7 @@ C Em9 G6 Em9 G6
 Ooooooooh
  
  
-[Verse 2]
+        [Verse 2]
 
    C                            Em9            G6
 My brother told that he's gonna kill himself tonight
@@ -42,7 +42,7 @@ C Em9 G6 Em9 G6
 Ooooooooh
  
  
-[Verse 3]
+        [Verse 3]
 
     C                             Em9       G6
 My girlfriend told me she doesn't love me anymore
@@ -54,13 +54,13 @@ So I drank a ton of liquor then I threw up in her sink
 She said next time use the toilet then she offered me a drink
  
 
-[Interlude]
+        [Interlude]
 
 C Em9 G6 Em9 G6
 Ooooooooh
  
  
-[Verse 4]
+        [Verse 4]
 
    C                                  Em9         G6
 We passed an old man bleeding on the side of the street
@@ -80,19 +80,48 @@ He said his house was all the way on the other side of town
 So we left him in the road and said we wouldn't turn around
  
  
-[Outro]
+        [Outro]
 
 C Em9 G6 x3
 `,
 
-        tabs: "e|----------------|\nB|----------------|\nG|----------------|"
+        tabs: `
+
+        [Verse] Riff 1
+
+e|---------------------------------------|
+B|---------------------------------------|
+G|-1-1-1-2-2-1-1-00--1-1-1-0-2-2-2-2-2-0-|
+D|-4-4-4-4-4-4-4-00--2-2-2-0-4-4-4-4-4-0-|
+A|-0-0-0-0-0-0-0-00--2-2-2-0-4-4-4-4-4-0-|
+D|-0-0-0-0-0-0-0-------------------------|
+
+
+            Riff 2
+e|--------------------------------------|
+B|--------------------------------------|
+G|-1-1-1----1-1-1-----------------------|
+D|-4-4-4-00-2-2-2-00-6/11-11\\6-6-6-----|
+A|-0-0-0-00-2-2-2-00-7/12-12\\7-7-7-----|
+D|-0-0-0-00-2-2-2-00-6/11-11\\6-6-6-----|  
+
+
+        [Outro] Riff 3
+
+e|-----------------------------------|
+B|-----------------------------------|
+G|-1-1-1----1-1-1---1-1/6-6\\1-1-1-1-|
+D|-4-4-4-00-2-2-2-0-2-2/7-7\\2-2-2-2-|
+A|-0-0-0-00-2-2-2-0-2-2/7-7\\2-2-2-2-|
+D|-0-0-0-00-------0-2-2/7-7\\2-2-2-2-|
+`,
     },
 
     {
         id: 2,
         name: "Things to do",
         artist: "Alex G",
-        type: "chords, tabs",
+        type: "chords",
 
         chords: `D E G Baug C Em Am F
 
@@ -172,7 +201,7 @@ Em D C
         id: 3,
         name: "Так гріє",
         artist: "Валентин Стрикало",
-        type: "chords, tabs",
+        type: "chords",
 
        chords: ` Dm C A# A
 
