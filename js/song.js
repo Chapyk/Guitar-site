@@ -50,26 +50,34 @@ for (let btn of buttons) {
 
 function formatChords(text) {
 
-    let words = text.split(" ")
-
-    let result = ""
-
     let chords = [
-        "Am", "C", "G", "G6", "F",
-        "Em", "Em9", "Dm", "D", "A",
-        "A#", "E", "Baug", 
+        "A", "Am",
+        "B", "Bm",
+        "C", "Cm",
+        "D", "Dm",
+        "E", "Em",
+        "F", "Fm",
+        "G", "Gm",
+
+        "A#", "C#", "D#", "F#", "G#",
+
+        "A#m", "C#m", "D#m", "F#m", "G#m",
+
+        "Em9",
+        "G6",
+        "Baug"
     ]
 
-    for (let word of words) {
+    let result = text
 
-        if (chords.includes(word)) {
+    for (let chord of chords) {
 
-            result += `<span class="chord">${word}</span> `
-        }
+        let regex = new RegExp(`\\b${chord}\\b`, "g")
 
-        else {
-            result += word + " "
-        }
+        result = result.replace(
+            regex,
+            `<span class="chord">${chord}</span>`
+        )
     }
 
     return result
