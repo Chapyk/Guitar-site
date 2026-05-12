@@ -136,6 +136,8 @@ color: white;
     cursor: pointer;
 }
 
+
+
 body.light {
     background-color: white;
     color: #1e1e1e;
@@ -168,6 +170,13 @@ body.light .filter-btn {
     color: black;
 }
 
+body.light .back-btn {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
 .chord {
     color: #00b894;
     font-weight: bold;
@@ -197,4 +206,23 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.back-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 10px 15px;
+
+    background-color: #444;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #666;
 }
