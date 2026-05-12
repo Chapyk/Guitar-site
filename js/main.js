@@ -14,7 +14,15 @@ function showSongs(type) {
 
         let matchName = song.name.toLowerCase().includes(text)
 
-        let matchType = type === "all" || song.type === type
+       let matchType = false
+
+if (type === "all") {
+    matchType = true
+}
+
+else if (song.type === type || song.type === "all") {
+    matchType = true
+}
 
         if (matchName && matchType) {
 
@@ -58,3 +66,4 @@ themeBtn.addEventListener("click", function () {
 
     document.body.classList.toggle("dark")
 })
+

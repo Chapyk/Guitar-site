@@ -3,7 +3,7 @@ let songs = [
         id: 1,
         name: "Nintendo 64",
         artist: "Alex G",
-        type: "All",
+        type: "all",
 
         chords: `C Em9 G6
 
