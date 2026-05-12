@@ -14,6 +14,10 @@ let buttons = document.querySelectorAll(".mode-btn")
 title.innerText = song.name
 artist.innerText = song.artist
 
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light")
+}
+
 function showMode(mode) {
 
     if (mode === "chords") {
