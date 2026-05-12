@@ -63,7 +63,15 @@ searchInput.addEventListener("input", function () {
 let themeBtn = document.querySelector(".theme-btn")
 
 if (localStorage.getItem("theme") === "light") {
+
     document.body.classList.add("light")
+
+    themeBtn.innerText = "dark mode"
+}
+
+else {
+
+    themeBtn.innerText = "light mode"
 }
 
 themeBtn.addEventListener("click", function () {
@@ -73,11 +81,15 @@ themeBtn.addEventListener("click", function () {
     if (document.body.classList.contains("light")) {
 
         localStorage.setItem("theme", "light")
+
+        themeBtn.innerText = "dark mode"
     }
 
     else {
 
         localStorage.setItem("theme", "dark")
+
+        themeBtn.innerText = "light mode"
     }
 })
 
