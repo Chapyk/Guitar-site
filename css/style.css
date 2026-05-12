@@ -5,6 +5,7 @@ body {
     color: white;
 
     transition: 0.3s;
+    animation: fade 0.4s;
 }
 
 .header {
@@ -175,4 +176,17 @@ button {
 
 button:hover {
     opacity: 0.85;
+}
+
+@keyframes fade {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
