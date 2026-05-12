@@ -3,6 +3,8 @@ body {
     font-family: Arial;
     background-color: #1e1e1e;
     color: white;
+    
+    transition: 0.3s;
 }
 
 .header {
